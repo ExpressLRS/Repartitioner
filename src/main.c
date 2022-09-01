@@ -68,12 +68,12 @@ void app_main()
     }
 
     // Write the new partition table
-    esp_err_t ret = spi_flash_erase_range(CONFIG_PARTITION_TABLE_OFFSET, 0x2000);
+    esp_err_t ret = spi_flash_erase_range(CONFIG_PARTITION_TABLE_OFFSET, 0x1000);
     if (ret == ESP_OK)
     {
         memset(buffer, 0xFF, sizeof(buffer));
         memcpy(buffer, partition_data, sizeof(partition_data));
-        spi_flash_write(CONFIG_PARTITION_TABLE_OFFSET, buffer, 0x2000);
+        spi_flash_write(CONFIG_PARTITION_TABLE_OFFSET, buffer, 0x1000);
     }
 
     // Set the other partition as boot and reboot
