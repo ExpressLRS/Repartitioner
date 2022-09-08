@@ -1,6 +1,7 @@
 # What is this?
 
 This is a small firmware that resolves the dreaded "Bad Size Given" problem in some ExpressLRS TX modules.
+There are reports that this can also solve problems with the "Not Enough Space" error. 
 
 # I've got the "Bad Size Given" problem, how do I use this to fix it?
 
