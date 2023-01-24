@@ -1,3 +1,6 @@
+# DO NOT FLASH THIS TO A RECEIVER!
+If you do this and the receiver is an ESP8285 based receiver, which most are, you will soft-brick your receiver and will have to remove it from you build and re-flash it with an FTDI adapter. YOU HAVE BEEN WARNED!
+
 # What is this?
 
 This is a small firmware that resolves the dreaded "Bad Size Given" problem in some ExpressLRS TX modules.
