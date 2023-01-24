@@ -2,6 +2,7 @@
 #include <string.h>
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
+#include <esp_spi_flash.h>
 #include <esp_ota_ops.h>
 #include <esp_err.h>
 #include <esp_log.h>
@@ -36,7 +37,7 @@ uint8_t buffer[0x2000];
 
 void app_main()
 {
-    vTaskDelay(5000 / portTICK_RATE_MS);
+    vTaskDelay(5000 / portTICK_PERIOD_MS);
     ESP_LOGI(TAG, "Starting...");
 
     const esp_partition_t *boot_partition = esp_ota_get_running_partition();
