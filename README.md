@@ -4,7 +4,9 @@ If you do this and the receiver is an ESP8285 based receiver, which most are, yo
 # What is this?
 
 This is a small firmware that resolves the dreaded "Bad Size Given" problem in some ExpressLRS TX modules.
-There are reports that this can also solve problems with the "Not Enough Space" error. 
+There are reports that this can also solve problems with the "Not Enough Space" error.
+
+Developed and maintained by **ExpressLRS LLC** and its passionate open source community, working together to advance reliable, high-performance radio control technology.
 
 # I've got the "Bad Size Given" problem, how do I use this to fix it?
 
